@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthLens AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <span>TruthLens <b>AI</b></span>
+            </div>
+
+            <div class="status">
+                <span class="dot"></span>
+                AI Powered
+            </div>
+        </nav>
+
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="badge">
+                ✨ Intelligent News Analysis
+            </div>
+
+            <h1>
+                Is it <span>True</span> or<br>
+                <span>Misleading?</span>
+            </h1>
+
+            <p>
+                Analyze news content using AI. Paste a news story
+                or upload a screenshot to get an instant analysis.
+            </p>
+
+        </section>
+
+
+        <!-- Analyzer -->
+        <section class="analyzer">
+
+            <!-- Text -->
+            <div class="card">
+
+                <div class="card-title">
+                    <div class="icon">📝</div>
+
+                    <div>
+                        <h2>Analyze News Text</h2>
+                        <p>Paste your news content</p>
+                    </div>
+                </div>
+
+                <textarea
+                    id="newsText"
+                    placeholder="Paste a news article, headline or claim here...">
+                </textarea>
+
+                <div class="bottom">
+
+                    <span id="charCount">0 characters</span>
+
+                    <button id="textButton">
+                        Analyze Text →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="card">
+
+                <div class="card-title">
+                    <div class="icon">🖼️</div>
+
+                    <div>
+                        <h2>Analyze News Image</h2>
+                        <p>Upload a screenshot or image</p>
+                    </div>
+                </div>
+
+
+                <label for="newsImage" class="upload">
+
+                    <div class="upload-icon">↑</div>
+
+                    <h3>Upload News Image</h3>
+
+                    <p>Click here to choose an image</p>
+
+                    <small>PNG, JPG or JPEG</small>
+
+                </label>
+
+                <input
+                    type="file"
+                    id="newsImage"
+                    accept="image/png, image/jpeg, image/jpg"
+                >
+
+                <p id="fileName">No image selected</p>
+
+                <button id="imageButton" class="full-button">
+                    Analyze Image →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+        <section class="result">
+
+            <div class="result-top">
+
+                <div>
+                    <small>AI ANALYSIS</small>
+                    <h2>Analysis Result</h2>
+                </div>
+
+                <span class="gemini">✦ Gemini AI</span>
+
+            </div>
+
+
+            <div id="resultBox" class="result-box">
+
+                <div class="waiting">
+                    <div class="waiting-icon">◉</div>
+
+                    <h3>Waiting for your content</h3>
+
+                    <p>
+                        Submit news text or an image to start analysis.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            ⚠ AI-generated analysis may not always be accurate.
+            Verify important information using reliable sources.
+        </div>
+
+
+        <footer>
+            TruthLens AI • AI-powered news analysis
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
